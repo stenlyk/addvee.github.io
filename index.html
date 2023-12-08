@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Addvee - účetní kancelář</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+  <!-- Template Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Comfortaa', sans-serif;
+    }
+
+    .faq .content p,
+    .section-header p {
+      font-size: 18px;
+    }
+
+    .hero h3 {
+      color: white;
+    }
+
+    :root {
+      --color-primary: hsl(209.45deg 22.63% 47.65%);
+      --color-primary-light: hsl(209.45deg 22.63% 50.65%);
+      --color-primary-light2: hsl(209.45deg 22.63% 53.65%);
+      --color-primary-light3: hsl(209.45deg 22.63% 56.65%);
+      --color-primary-dark: hsl(209.45deg 22.63% 44.65%);
+
+      --font-default: 'Comfortaa', sans-serif;
+      --font-primary: 'Comfortaa', sans-serif;
+      --font-secondary: 'Comfortaa', sans-serif;
+
+      --color-secondary: hsl(8.48deg 92.93% 35.18%);
+    }
+
+    .hero .icon-box {
+      background: var(--color-primary-light);
+    }
+
+    .hero .icon-box:hover {
+      background: var(--color-primary-light2);
+    }
+
+    .topbar {
+      background: var(--color-primary-dark);
+    }
+
+    .services .service-item:hover .icon:before,
+    .contact .info-item {
+      background: var(--color-primary-light3);
+    }
+
+    .contact .php-email-form button[type=submit]:hover {
+      background: var(--color-primary-light3);
+    }
+
+    .hero {
+      background: url("./assets/img/accounting.jpeg") center center no-repeat;
+      background-size: cover;
+    }
+
+    .hero .box {
+      background: rgba(101, 130, 158, 0.8);
+      border-radius: 10px;
+      padding: 10px 20px;
+    }
+
+    .hero p {
+      color: white;
+    }
+
+    .faq h4 {
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    svg {
+      display: none;
+    }
+
+    path[fill="#f85a40"] {
+      fill: var(--color-secondary);
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <section id="topbar" class="topbar d-flex align-items-center">
+    <div class="container d-flex justify-content-center justify-content-md-between">
+      <div class="contact-info d-flex align-items-center">
+        <i class="bi bi-envelope d-flex align-items-center"><a href="mailto:addvee@addvee.cz">addvee@addvee.cz</a></i>
+        <i class="bi bi-phone d-flex align-items-center ms-4"><span>+420 724 107 358</span></i>
+      </div>
+      <!-- <div class="social-links d-none d-md-flex align-items-center">
+        <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+        <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></i></a>
+      </div> -->
+    </div>
+  </section><!-- End Top Bar -->
+
+  <header id="header" class="header d-flex align-items-center">
+
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+      <a href="index.html" class="logo d-flex align-items-center">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <h1><img src="assets/img/addvee.png" height="56" /></h1>
+      </a>
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a href="#hero">Úvod</a></li>
+          <li><a href="#services">Služby</a></li>
+          <li><a href="#career">Kariéra</a></li>
+          <li><a href="#contact">Kontakt</a></li>
+        </ul>
+      </nav><!-- .navbar -->
+
+      <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+      <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+
+    </div>
+  </header><!-- End Header -->
+  <!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="hero">
+    <div class="container position-relative">
+      <div class="row gy-5" data-aos="fade-in">
+        <div
+          class="col-lg-6 box order-2 order-lg-1 d-flex flex-column justify-content-center text-center text-lg-start">
+          <h2>Vítejte u <span>Addvee</span></h2>
+          <p>V Addvee pracují odborníci, pro které je účetnictví a daně <br>součást života již po mnoho let.<br>
+            <strong>Efektivita</strong>, <strong>profesionalita</strong>, <strong>spolehlivost</strong>.
+          </p>
+          <h3><small>Naše mise:</small><br>„Správně a včas.“</h3>
+        </div>
+        <div class="col-lg-6 order-1 order-lg-2">
+        </div>
+      </div>
+    </div>
+
+    <div class="icon-boxes position-relative">
+      <div class="container position-relative">
+        <div class="row gy-4 mt-5">
+
+          <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="icon-box">
+              <div class="icon"><i class="bi bi-layout-text-sidebar"></i></div>
+              <h4 class="title"><a href="#services" class="stretched-link">Účetnictví</a></h4>
+            </div>
+          </div><!--End Icon Box -->
+
+          <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="icon-box">
+              <div class="icon"><i class="bi bi-person-check"></i></div>
+              <h4 class="title"><a href="#services" class="stretched-link">Daňové poradenství a&nbsp;audit</a>
+              </h4>
+            </div>
+          </div><!--End Icon Box -->
+
+          <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="icon-box">
+              <div class="icon"><i class="bi bi-cash-coin"></i></div>
+              <h4 class="title"><a href="#services" class="stretched-link">Zpracování mezd a&nbsp;personalistiky
+                </a></h4>
+            </div>
+          </div><!--End Icon Box -->
+
+          <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="500">
+            <div class="icon-box">
+              <div class="icon"><i class="bi bi-shield-plus"></i></div>
+              <h4 class="title"><a href="#services" class="stretched-link">Procesní poradenství – Interim management</a>
+              </h4>
+            </div>
+          </div><!--End Icon Box -->
+
+        </div>
+      </div>
+    </div>
+
+    </div>
+  </section>
+  <!-- End Hero Section -->
+
+  <main id="main">
+
+    <!-- ======= About Us Section ======= -->
+    <section id="about" class="about">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-header">
+          <h2>O Addvee</h2>
+          <p>Jsme poradenská společnost složená z lidí, co rádi dělají svoji práci. Nejsme jenom odborníci ve svém
+            oboru, ale především lidé, kterým záleží na odvedené práci a spokojenosti klientů. Pohybujeme se v oboru
+            účetnictví, daní a ekonomického poradenství již desítky let.<br />Naše motto: Správně a včas </p>
+        </div>
+        <!--
+        <div class="row gy-4">
+          <div class="col-lg-6">
+            <h3>Voluptatem dignissimos provident quasi corporis</h3>
+            <img src="assets/img/about.jpg" class="img-fluid rounded-4 mb-4" alt="">
+            <p>Ut fugiat ut sunt quia veniam. Voluptate perferendis perspiciatis quod nisi et. Placeat debitis quia
+              recusandae odit et consequatur voluptatem. Dignissimos pariatur consectetur fugiat voluptas ea.</p>
+            <p>Temporibus nihil enim deserunt sed ea. Provident sit expedita aut cupiditate nihil vitae quo officia vel.
+              Blanditiis eligendi possimus et in cum. Quidem eos ut sint rem veniam qui. Ut ut repellendus nobis tempore
+              doloribus debitis explicabo similique sit. Accusantium sed ut omnis beatae neque deleniti repellendus.</p>
+          </div>
+          <div class="col-lg-6">
+            <div class="content ps-0 ps-lg-5">
+              <p class="fst-italic">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore
+                magna aliqua.
+              </p>
+              <ul>
+                <li><i class="bi bi-check-circle-fill"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </li>
+                <li><i class="bi bi-check-circle-fill"></i> Duis aute irure dolor in reprehenderit in voluptate velit.
+                </li>
+                <li><i class="bi bi-check-circle-fill"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat
+                  nulla pariatur.</li>
+              </ul>
+              <p>
+                Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                voluptate
+                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident
+              </p>
+
+              <div class="position-relative mt-4">
+                <img src="assets/img/about-2.jpg" class="img-fluid rounded-4" alt="">
+                <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="glightbox play-btn"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        -->
+      </div>
+    </section><!-- End About Us Section -->
+
+
+
+    <!-- ======= Our Services Section ======= -->
+    <section id="services" class="services sections-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-header">
+          <h2>Naše služby</h2>
+        </div>
+
+        <div class="row gy-4" data-aos="fade-up" data-aos-delay="100">
+
+          <div class="col-lg-4 col-md-6">
+            <div class="service-item  position-relative">
+              <div class="icon">
+                <i class="bi bi-layout-text-sidebar"></i>
+              </div>
+              <h3>Účetnictví</h3>
+              <ul>
+                <li>Zpracování prvotních dokladů</li>
+                <li>Spolupráce na měsíčních a ročních závěrkách</li>
+                <li>Odborný dohled a supervize účetního teamu</li>
+                <li>Zpracování metodických postupů</li>
+                <li>Zástup hlavní účetní</li>
+                <li>Návrh pro budget plány, měsíční závěrky</li>
+                <li>reporting</li>
+              </ul>
+
+              <!--<a href="#" class="readmore stretched-link">Read more <i class="bi bi-arrow-right"></i></a>-->
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-person-check"></i>
+              </div>
+              <h3>Daňové poradenství</h3>
+              <ul>
+                <li>Zpracování všech daňových přiznání od daňového poradce</li>
+                <li>Zastupování před úřady specialistou</li>
+              </ul>
+
+              <!--<a href="#" class="readmore stretched-link">Read more <i class="bi bi-arrow-right"></i></a>-->
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-cash-coin"></i>
+              </div>
+              <h3>Zpracování mezd a personalistiky</h3>
+              <ul>
+                <li>Výpočet mezd a exekucí</li>
+                <li>Zpracování neschopenek</li>
+                <li>Komunikace s pojišťovnami</li>
+              </ul>
+
+              <!--<a href="#" class="readmore stretched-link">Read more <i class="bi bi-arrow-right"></i></a>-->
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-calendar4-week"></i>
+              </div>
+              <h3>Audit</h3>
+              <ul>
+                <li>Komunikace s auditory při doborovolném i povinném auditu</li>
+                <li>Zpracování a kontrola podkladů pro audit</li>
+              </ul>
+
+              <!--<a href="#" class="readmore stretched-link">Read more <i class="bi bi-arrow-right"></i></a>-->
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-shield-plus"></i>
+              </div>
+              <h3>Procesní poradenství – Interim management</h3>
+              <ul>
+                <li>Pomůžeme s indetifikací rizik</li>
+                <li>Nastartujeme a akcelerujeme Váš růst</li>
+                <li>Naše mise: Dosáhněte s námi více za kratší dobu.</li>
+              </ul>
+              <!--<a href="#" class="readmore stretched-link">Read more <i class="bi bi-arrow-right"></i></a>-->
+            </div>
+          </div><!-- End Service Item -->
+
+        </div>
+
+      </div>
+    </section><!-- End Our Services Section -->
+
+    <!-- ======= Frequently Asked Questions Section ======= -->
+    <section id="career" class="faq">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-8">
+            <div class="content px-xl-5">
+              <h3>Kariéra <strong>Účetní</strong></h3>
+              <h4>Náplň práce</h4>
+              <p>Zpracování účetnictví pro externí klienty, výpomoc při zadávání dokladů do systému, dohled a spolupráce
+                nad měsíčními či ročními účetními závěrkami. Ekonomické poradenství a zpracování mezd. Spolupráce s
+                daňovými poradci a auditory.</p>
+              <h4>Požadavky</h4>
+              <p>Praxe v oboru min 3 roky podmínkou. Očekáváme spolehlivost, důslednost a proaktivní přístup.</p>
+              <h4>Nabízíme</h4>
+              <p>Práce v kolektivu odborníků, pomoc se zaučením a získáním nových zkušeností. Spolupráce při zpracování
+                daňových přiznání.</p>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <img src="assets/img/team/team-2.jpg" class="img-fluid" alt="" style="border-radius: 10px;">
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Frequently Asked Questions Section -->
+
+
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact sections-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-header">
+          <h2>Kontaktní formulář</h2>
+        </div>
+
+        <div class="row gx-lg-0 gy-4">
+
+          <div class="col-lg-4">
+
+            <div class="info-container d-flex flex-column align-items-center justify-content-center">
+              <div class="info-item d-flex">
+                <i class="bi bi-geo-alt flex-shrink-0"></i>
+                <div>
+                  <h4>Sídlo:</h4>
+                  <p>Radlická 663/28, Smíchov, 150 00 Praha 5</p>
+                </div>
+              </div><!-- End Info Item -->
+
+              <div class="info-item d-flex">
+                <i class="bi bi-envelope flex-shrink-0"></i>
+                <div>
+                  <h4>Email:</h4>
+                  <p>addvee@addvee.cz</p>
+                </div>
+              </div><!-- End Info Item -->
+
+              <div class="info-item d-flex">
+                <i class="bi bi-phone flex-shrink-0"></i>
+                <div>
+                  <h4>Tel:</h4>
+                  <p>+420 724 107 358</p>
+                </div>
+              </div><!-- End Info Item -->
+
+              <div class="info-item d-flex">
+                <i class="bi bi-clock flex-shrink-0"></i>
+                <div>
+                  <h4>Pracovní doba:</h4>
+                  <p>Po-Pá: 9:00 - 16:00</p>
+                </div>
+              </div><!-- End Info Item -->
+            </div>
+
+          </div>
+
+          <div class="col-lg-8">
+            <form action="https://www.posilovnaputim.cz/advee/forms/contact.php" method="post" role="form"
+              class="php-email-form">
+              <div class="row">
+                <div class="col-md-6 form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Vaše jméno" required>
+                </div>
+                <div class="col-md-6 form-group mt-3 mt-md-0">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Váš email" required>
+                </div>
+              </div>
+              <div class="form-group mt-3">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Předmět" required>
+              </div>
+              <div class="form-group mt-3">
+                <textarea class="form-control" name="message" rows="7" placeholder="Zpráva" required></textarea>
+              </div>
+              <div class="my-3">
+                <div class="loading">Odesílám...</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Vaše zpráva byla odeslána. Děkujeme!</div>
+              </div>
+              <div class="text-center"><button type="submit">Odelsat zprávu</button></div>
+            </form>
+          </div><!-- End Contact Form -->
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+
+    <div class="container">
+      <div class="row gy-4">
+        <div class="col-lg-5 col-md-12 footer-info">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <span>Addvee</span>
+          </a>
+          <p>V Addvee pracují odborníci, pro které je účetnictví a daně součást života již po mnoho let.
+            Efektivita, profesionalita, spolehlivost.</p>
+          <!--<div class="social-links d-flex mt-4">
+            <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+            <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+          </div>-->
+        </div>
+
+        <div class="col-lg-4 col-12 footer-links">
+          <h4>Naše služby</h4>
+          <ul>
+            <li><a href="#services">Účetnictví</a></li>
+            <li><a href="#services">Daňové poradenství</a></li>
+            <li><a href="#services">Zpracování mezd a personalistiky</a></li>
+            <li><a href="#services">Audit</a></li>
+            <li><a href="#services">Procesní poradenství</a></li>
+          </ul>
+        </div>
+
+        <!--  <div class="col-lg-2 col-6 footer-links">
+          <h4>Our Services</h4>
+          <ul>
+            <li><a href="#">Web Design</a></li>
+            <li><a href="#">Web Development</a></li>
+            <li><a href="#">Product Management</a></li>
+            <li><a href="#">Marketing</a></li>
+            <li><a href="#">Graphic Design</a></li>
+          </ul>
+          
+        </div>-->
+
+        <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+          <h4>Kontakt</h4>
+          <p>
+            Addvee s.r.o.<br>
+            Radlická 663/28<br>
+            150 00 Praha 5<br><br>
+            <strong>IČ:</strong> 199 38 080
+            <br><br>
+            <strong>Tel:</strong> +420 724 107 358<br>
+            <strong>Email:</strong> addvee@addvee.cz<br>
+          </p>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container mt-4">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Addvee</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/impact-bootstrap-business-website-template/ -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+
+  </footer><!-- End Footer -->
+  <!-- End Footer -->
+
+  <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
